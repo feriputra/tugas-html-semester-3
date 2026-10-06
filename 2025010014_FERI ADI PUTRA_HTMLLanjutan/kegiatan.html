@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Pendaftaran Kegiatan Mahasiswa - Mini Project</title>
+</head>
+<body>
+  <!-- HEADER HALAMAN -->
+  <header>
+    <h1>Pendaftaran Kegiatan Mahasiswa</h1>
+    <p>Mini Project - Praktik 19 dan 20</p>
+  </header>
+
+  <!-- NAVIGASI ANTAR HALAMAN -->
+    <nav>
+      <a href="index.html">Beranda</a> |
+      <a href="list.html">List</a> |
+      <a href="table.html">Tabel</a> |
+      <a href="form.html">Form</a> |
+      <a href="semantic.html">Semantic</a> |
+      <a href="kegiatan.html">Kegiatan</a> |
+      <a href="debugging.html">Debugging</a>
+    </nav>
+
+  <!-- KONTEN UTAMA -->
+  <main>
+    <!-- SECTION INFORMASI KEGIATAN -->
+    <section>
+      <h2>Informasi Kegiatan</h2>
+      <img src="images/kegiatan.jpg" alt="Ilustrasi kegiatan mahasiswa" width="300" height="200">
+      <article>
+        <h3>Workshop Pemrograman Web</h3>
+        <p>Workshop untuk mahasiswa yang ingin memperdalam dasar-dasar pembuatan halaman web.</p>
+        <h4>Fasilitas</h4>
+        <ul>
+          <li>Sertifikat kehadiran</li>
+          <li>Modul pelatihan</li>
+          <li>Konsumsi</li>
+          <li>Akses ruang laboratorium</li>
+        </ul>
+        <h4>Ketentuan</h4>
+        <ol>
+          <li>Peserta adalah mahasiswa aktif.</li>
+          <li>Membawa laptop sendiri.</li>
+          <li>Hadir 15 menit sebelum acara dimulai.</li>
+          <li>Mengisi formulir pendaftaran dengan benar.</li>
+        </ol>
+      </article>
+    </section>
+
+    <!-- SECTION JADWAL -->
+    <section>
+      <h2>Jadwal Kegiatan</h2>
+      <table border="1">
+        <caption>Jadwal Workshop dan Kegiatan</caption>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Tanggal</th>
+            <th>Jam</th>
+            <th>Kegiatan</th>
+            <th>Tempat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>2026-10-05</td><td>09.00</td><td>Pembukaan dan Pengenalan HTML</td><td>Lab 1</td></tr>
+          <tr><td>2</td><td>2026-10-05</td><td>13.00</td><td>Praktik List dan Tabel</td><td>Lab 1</td></tr>
+          <tr><td>3</td><td>2026-10-06</td><td>09.00</td><td>Praktik Form dan Input</td><td>Lab 2</td></tr>
+          <tr><td>4</td><td>2026-10-06</td><td>13.00</td><td>Semantic HTML</td><td>Lab 2</td></tr>
+          <tr><td>5</td><td>2026-10-07</td><td>09.00</td><td>Mini Project dan Penutupan</td><td>Aula</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- SECTION FORM PENDAFTARAN -->
+    <section>
+      <h2>Formulir Pendaftaran</h2>
+      <form action="#" method="get">
+        <label for="k-nama">Nama:</label>
+        <input type="text" id="k-nama" name="nama" placeholder="Masukkan nama lengkap" required>
+        <br><br>
+        <label for="k-email">Email:</label>
+        <input type="email" id="k-email" name="email" placeholder="nama@email.com" required>
+        <br><br>
+        <label for="k-telepon">Telepon:</label>
+        <input type="tel" id="k-telepon" name="telepon" placeholder="08xxxxxxxxxx" required>
+        <br><br>
+        <label for="k-kegiatan">Pilihan Kegiatan:</label>
+        <select id="k-kegiatan" name="kegiatan" required>
+          <option value="workshop-web">Workshop Pemrograman Web</option>
+          <option value="seminar">Seminar Karier</option>
+          <option value="lomba">Lomba Coding</option>
+          <option value="pelatihan">Pelatihan Basis Data</option>
+          <option value="lainnya">Kegiatan Lainnya</option>
+        </select>
+        <br><br>
+        <p>Metode Kehadiran:</p>
+        <input type="radio" id="k-offline" name="kehadiran" value="offline" required>
+        <label for="k-offline">Offline</label>
+        <input type="radio" id="k-online" name="kehadiran" value="online">
+        <label for="k-online">Online</label>
+        <br><br>
+        <p>Kebutuhan:</p>
+        <input type="checkbox" id="k-modul" name="kebutuhan" value="modul">
+        <label for="k-modul">Modul Cetak</label>
+        <input type="checkbox" id="k-konsumsi" name="kebutuhan" value="konsumsi">
+        <label for="k-konsumsi">Konsumsi</label>
+        <input type="checkbox" id="k-sertifikat" name="kebutuhan" value="sertifikat">
+        <label for="k-sertifikat">Sertifikat</label>
+        <br><br>
+        <label for="k-alasan">Alasan Mengikuti:</label><br>
+        <textarea id="k-alasan" name="alasan" rows="5" cols="40" placeholder="Tuliskan alasan Anda"></textarea>
+        <br><br>
+        <button type="submit">Daftar</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+
+    <!-- ASIDE INFORMASI TAMBAHAN -->
+    <aside>
+      <h2>Informasi Tambahan</h2>
+      <p>Pendaftaran ditutup satu hari sebelum kegiatan dimulai.</p>
+      <p>Lihat <a href="semantic.html">portal informasi</a> atau kembali ke <a href="index.html">beranda</a>.</p>
+    </aside>
+  </main>
+
+  <!-- FOOTER HALAMAN -->
+  <footer>
+    <p>Copyright 2026 - FERI ADI PUTRA (2025010014)</p>
+  </footer>
+</body>
+</html>

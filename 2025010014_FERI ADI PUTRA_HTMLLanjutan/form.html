@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Form - Praktik 7 sampai 16</title>
+</head>
+<body>
+  <!-- HEADER HALAMAN -->
+  <header>
+    <h1>Praktik Form, Input, dan Button</h1>
+    <p>Latihan komponen form dan Form Registrasi Mahasiswa Lengkap</p>
+  </header>
+
+  <!-- NAVIGASI ANTAR HALAMAN -->
+    <nav>
+      <a href="index.html">Beranda</a> |
+      <a href="list.html">List</a> |
+      <a href="table.html">Tabel</a> |
+      <a href="form.html">Form</a> |
+      <a href="semantic.html">Semantic</a> |
+      <a href="kegiatan.html">Kegiatan</a> |
+      <a href="debugging.html">Debugging</a>
+    </nav>
+
+  <main>
+    <!-- PRAKTIK 7: STRUKTUR FORM -->
+    <section>
+      <h2>Praktik 7 - Struktur Form</h2>
+      <form>
+        <label for="p7-nama">Nama:</label>
+        <input type="text" id="p7-nama" name="nama">
+        <br><br>
+        <label for="p7-email">Email:</label>
+        <input type="email" id="p7-email" name="email">
+        <br><br>
+        <label for="p7-nim">NIM:</label>
+        <input type="text" id="p7-nim" name="nim">
+        <br><br>
+        <label for="p7-alamat">Alamat:</label>
+        <input type="text" id="p7-alamat" name="alamat">
+        <br><br>
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+
+    <!-- PRAKTIK 8: TEXT, EMAIL, PASSWORD -->
+    <section>
+      <h2>Praktik 8 - Input Text, Email, Password</h2>
+      <form>
+        <label for="p8-nama">Nama:</label>
+        <input type="text" id="p8-nama" name="nama">
+        <br><br>
+        <label for="p8-username">Username:</label>
+        <input type="text" id="p8-username" name="username">
+        <br><br>
+        <label for="p8-email">Email:</label>
+        <input type="email" id="p8-email" name="email">
+        <br><br>
+        <label for="p8-password">Password:</label>
+        <input type="password" id="p8-password" name="password">
+        <br><br>
+        <button type="submit">Daftar</button>
+      </form>
+    </section>
+
+    <!-- PRAKTIK 9: NUMBER, DATE, TEL -->
+    <section>
+      <h2>Praktik 9 - Input Number, Date, dan Tel</h2>
+      <form>
+        <label for="p9-jumlah">Jumlah (1-10):</label>
+        <input type="number" id="p9-jumlah" name="jumlah" min="1" max="10">
+        <br><br>
+        <label for="p9-tanggal">Tanggal:</label>
+        <input type="date" id="p9-tanggal" name="tanggal">
+        <br><br>
+        <label for="p9-telepon">Telepon:</label>
+        <input type="tel" id="p9-telepon" name="telepon">
+        <br><br>
+        <button type="submit">Pesan</button>
+      </form>
+    </section>
+
+    <!-- PRAKTIK 10: RADIO BUTTON -->
+    <section>
+      <h2>Praktik 10 - Radio Button</h2>
+      <form>
+        <p>Metode Pembayaran:</p>
+        <input type="radio" id="p10-transfer" name="pembayaran" value="transfer">
+        <label for="p10-transfer">Transfer Bank</label>
+        <br>
+        <input type="radio" id="p10-cod" name="pembayaran" value="cod">
+        <label for="p10-cod">COD</label>
+        <br>
+        <input type="radio" id="p10-ewallet" name="pembayaran" value="ewallet">
+        <label for="p10-ewallet">E-Wallet</label>
+        <br>
+        <input type="radio" id="p10-kartu" name="pembayaran" value="kartu">
+        <label for="p10-kartu">Kartu Kredit</label>
+        <br><br>
+        <button type="submit">Bayar</button>
+      </form>
+    </section>
+
+    <!-- PRAKTIK 11: CHECKBOX -->
+    <section>
+      <h2>Praktik 11 - Checkbox</h2>
+      <form>
+        <p>Minat Mahasiswa (boleh lebih dari satu):</p>
+        <input type="checkbox" id="p11-web" name="minat" value="web">
+        <label for="p11-web">Pemrograman Web</label>
+        <br>
+        <input type="checkbox" id="p11-mobile" name="minat" value="mobile">
+        <label for="p11-mobile">Aplikasi Mobile</label>
+        <br>
+        <input type="checkbox" id="p11-data" name="minat" value="data">
+        <label for="p11-data">Data dan Basis Data</label>
+        <br>
+        <input type="checkbox" id="p11-jaringan" name="minat" value="jaringan">
+        <label for="p11-jaringan">Jaringan Komputer</label>
+        <br>
+        <input type="checkbox" id="p11-desain" name="minat" value="desain">
+        <label for="p11-desain">Desain Antarmuka</label>
+        <br><br>
+        <button type="submit">Simpan Minat</button>
+      </form>
+      <p>Perbandingan: radio hanya membolehkan satu pilihan dalam satu kelompok name, sedangkan checkbox membolehkan banyak pilihan.</p>
+    </section>
+
+    <!-- PRAKTIK 12: SELECT DAN OPTION -->
+    <section>
+      <h2>Praktik 12 - Select dan Option</h2>
+      <form>
+        <label for="p12-prodi">Program Studi:</label>
+        <select id="p12-prodi" name="prodi">
+          <option value="rpl">Rekayasa Perangkat Lunak</option>
+          <option value="bd">Bisnis Digital</option>
+          <option value="si">Sistem Informasi</option>
+          <option value="ti">Teknik Informatika</option>
+          <option value="mi">Manajemen Informatika</option>
+        </select>
+        <br><br>
+        <label for="p12-kota">Kota:</label>
+        <select id="p12-kota" name="kota">
+          <option value="jepara">Jepara</option>
+          <option value="semarang">Semarang</option>
+          <option value="kudus">Kudus</option>
+          <option value="demak">Demak</option>
+          <option value="pati">Pati</option>
+        </select>
+        <br><br>
+        <label for="p12-kategori">Kategori Produk:</label>
+        <select id="p12-kategori" name="kategori">
+          <option value="elektronik">Elektronik</option>
+          <option value="buku">Buku</option>
+          <option value="pakaian">Pakaian</option>
+          <option value="makanan">Makanan</option>
+          <option value="olahraga">Olahraga</option>
+        </select>
+        <br><br>
+        <button type="submit">Pilih</button>
+      </form>
+    </section>
+
+    <!-- PRAKTIK 13: TEXTAREA -->
+    <section>
+      <h2>Praktik 13 - Textarea</h2>
+      <form>
+        <label for="p13-alamat">Alamat:</label><br>
+        <textarea id="p13-alamat" name="alamat" rows="5" cols="40"></textarea>
+        <br><br>
+        <label for="p13-pesan">Pesan:</label><br>
+        <textarea id="p13-pesan" name="pesan" rows="5" cols="40"></textarea>
+        <br><br>
+        <label for="p13-deskripsi">Deskripsi Produk:</label><br>
+        <textarea id="p13-deskripsi" name="deskripsi" rows="5" cols="40"></textarea>
+        <br><br>
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+
+    <!-- PRAKTIK 14: REQUIRED, PLACEHOLDER, VALUE -->
+    <section>
+      <h2>Praktik 14 - Required, Placeholder, dan Value</h2>
+      <form>
+        <label for="p14-nama">Nama (wajib):</label>
+        <input type="text" id="p14-nama" name="nama" placeholder="Masukkan nama lengkap" required>
+        <br><br>
+        <label for="p14-email">Email (wajib):</label>
+        <input type="email" id="p14-email" name="email" placeholder="nama@email.com" required>
+        <br><br>
+        <label for="p14-status">Status:</label>
+        <input type="text" id="p14-status" name="status" value="Mahasiswa">
+        <br><br>
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+
+    <!-- PRAKTIK 15: BUTTON -->
+    <section>
+      <h2>Praktik 15 - Button</h2>
+      <form>
+        <label for="p15-nama">Nama:</label>
+        <input type="text" id="p15-nama" name="nama">
+        <br><br>
+        <button type="submit">Kirim</button>
+        <button type="reset">Reset</button>
+        <button type="button">Tombol Biasa</button>
+      </form>
+      <ul>
+        <li>submit: mengirim data form dan memicu validasi browser.</li>
+        <li>reset: mengembalikan seluruh isi field ke nilai awal.</li>
+        <li>button: tidak melakukan apa pun tanpa JavaScript.</li>
+      </ul>
+    </section>
+
+    <!-- PRAKTIK 16: FORM REGISTRASI LENGKAP -->
+    <section>
+      <h2>Praktik 16 - Form Registrasi Mahasiswa</h2>
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Data Akun</legend>
+          <label for="reg-nama">Nama Lengkap:</label>
+          <input type="text" id="reg-nama" name="nama" placeholder="Masukkan nama lengkap" required>
+          <br><br>
+          <label for="reg-email">Email:</label>
+          <input type="email" id="reg-email" name="email" placeholder="nama@email.com" required>
+          <br><br>
+          <label for="reg-password">Password:</label>
+          <input type="password" id="reg-password" name="password" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Data Pribadi</legend>
+          <label for="reg-lahir">Tanggal Lahir:</label>
+          <input type="date" id="reg-lahir" name="tanggal_lahir" required>
+          <br><br>
+          <label for="reg-telepon">Telepon:</label>
+          <input type="tel" id="reg-telepon" name="telepon" placeholder="08xxxxxxxxxx" required>
+          <br><br>
+          <label for="reg-semester">Semester (1-14):</label>
+          <input type="number" id="reg-semester" name="semester" min="1" max="14" value="1">
+          <br><br>
+          <p>Jenis Kelamin:</p>
+          <input type="radio" id="reg-laki" name="gender" value="laki-laki" required>
+          <label for="reg-laki">Laki-laki</label>
+          <input type="radio" id="reg-perempuan" name="gender" value="perempuan">
+          <label for="reg-perempuan">Perempuan</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Data Akademik</legend>
+          <label for="reg-prodi">Program Studi:</label>
+          <select id="reg-prodi" name="prodi" required>
+            <option value="rpl">Rekayasa Perangkat Lunak</option>
+            <option value="bd">Bisnis Digital</option>
+            <option value="si">Sistem Informasi</option>
+            <option value="ti">Teknik Informatika</option>
+          </select>
+          <br><br>
+          <p>Minat:</p>
+          <input type="checkbox" id="reg-web" name="minat" value="web">
+          <label for="reg-web">Web</label>
+          <input type="checkbox" id="reg-mobile" name="minat" value="mobile">
+          <label for="reg-mobile">Mobile</label>
+          <input type="checkbox" id="reg-data" name="minat" value="data">
+          <label for="reg-data">Data</label>
+          <br><br>
+          <label for="reg-alamat">Alamat:</label><br>
+          <textarea id="reg-alamat" name="alamat" rows="4" cols="40" placeholder="Masukkan alamat lengkap" required></textarea>
+        </fieldset>
+        <br>
+        <button type="submit">Daftar</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER HALAMAN -->
+  <footer>
+    <p>Copyright 2026 - FERI ADI PUTRA (2025010014)</p>
+  </footer>
+</body>
+</html>

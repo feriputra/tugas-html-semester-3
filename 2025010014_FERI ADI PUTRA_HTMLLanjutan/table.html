@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabel - Praktik 4 sampai 6</title>
+</head>
+<body>
+  <!-- HEADER HALAMAN -->
+  <header>
+    <h1>Praktik Tabel HTML</h1>
+    <p>Tabel Dasar, Data Penjualan, Colspan dan Rowspan</p>
+  </header>
+
+  <!-- NAVIGASI ANTAR HALAMAN -->
+    <nav>
+      <a href="index.html">Beranda</a> |
+      <a href="list.html">List</a> |
+      <a href="table.html">Tabel</a> |
+      <a href="form.html">Form</a> |
+      <a href="semantic.html">Semantic</a> |
+      <a href="kegiatan.html">Kegiatan</a> |
+      <a href="debugging.html">Debugging</a>
+    </nav>
+
+  <main>
+    <!-- PRAKTIK 4: TABEL DATA MAHASISWA -->
+    <section>
+      <h2>Praktik 4 - Tabel Data Mahasiswa</h2>
+      <table border="1">
+        <caption>Data Mahasiswa</caption>
+        <thead>
+          <tr>
+            <th>NIM</th>
+            <th>Nama</th>
+            <th>Program Studi</th>
+            <th>Alamat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2025010014</td>
+            <td>Feri Adi Putra</td>
+            <td>RPL</td>
+            <td>Jepara</td>
+          </tr>
+          <tr>
+            <td>2025010001</td>
+            <td>Andi</td>
+            <td>RPL</td>
+            <td>Kudus</td>
+          </tr>
+          <tr>
+            <td>2025010002</td>
+            <td>Budi</td>
+            <td>RPL</td>
+            <td>Semarang</td>
+          </tr>
+          <tr>
+            <td>2025010003</td>
+            <td>Citra</td>
+            <td>RPL</td>
+            <td>Pati</td>
+          </tr>
+          <tr>
+            <td>2025010004</td>
+            <td>Dewi</td>
+            <td>RPL</td>
+            <td>Demak</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- PRAKTIK 5: TABEL DATA PENJUALAN -->
+    <section>
+      <h2>Praktik 5 - Tabel Data Penjualan</h2>
+      <table border="1">
+        <caption>Transaksi Penjualan</caption>
+        <thead>
+          <tr>
+            <th>Tanggal</th>
+            <th>Pelanggan</th>
+            <th>Produk</th>
+            <th>Jumlah</th>
+            <th>Harga (Rp)</th>
+            <th>Total (Rp)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>2026-09-01</td><td>Andi</td><td>Buku Tulis</td><td>10</td><td>5.000</td><td>50.000</td></tr>
+          <tr><td>2026-09-01</td><td>Budi</td><td>Pulpen</td><td>20</td><td>3.000</td><td>60.000</td></tr>
+          <tr><td>2026-09-02</td><td>Citra</td><td>Buku Tulis</td><td>5</td><td>5.000</td><td>25.000</td></tr>
+          <tr><td>2026-09-02</td><td>Dewi</td><td>Pulpen</td><td>12</td><td>3.000</td><td>36.000</td></tr>
+          <tr><td>2026-09-03</td><td>Eko</td><td>Buku Tulis</td><td>8</td><td>5.000</td><td>40.000</td></tr>
+          <tr><td>2026-09-03</td><td>Fajar</td><td>Pulpen</td><td>30</td><td>3.000</td><td>90.000</td></tr>
+          <tr><td>2026-09-04</td><td>Gita</td><td>Buku Tulis</td><td>15</td><td>5.000</td><td>75.000</td></tr>
+          <tr><td>2026-09-04</td><td>Hadi</td><td>Pulpen</td><td>25</td><td>3.000</td><td>75.000</td></tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="5">Total Keseluruhan</th>
+            <th>451.000</th>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <!-- PRAKTIK 6: COLSPAN DAN ROWSPAN -->
+    <section>
+      <h2>Praktik 6 - Colspan dan Rowspan</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th colspan="3">Jadwal Kuliah</th>
+          </tr>
+          <tr>
+            <th>Hari</th>
+            <th>Jam</th>
+            <th>Mata Kuliah</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">Senin</td>
+            <td>08.00</td>
+            <td>Pemrograman Web</td>
+          </tr>
+          <tr>
+            <td>10.00</td>
+            <td>Basis Data</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Rabu</td>
+            <td>08.00</td>
+            <td>Struktur Data</td>
+          </tr>
+          <tr>
+            <td>10.00</td>
+            <td>Pendidikan Pancasila</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Jumat</td>
+            <td>08.00</td>
+            <td>Metodologi Penelitian</td>
+          </tr>
+          <tr>
+            <td>10.00</td>
+            <td>Pemrograman Golang</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- FOOTER HALAMAN -->
+  <footer>
+    <p>Copyright 2026 - FERI ADI PUTRA (2025010014)</p>
+  </footer>
+</body>
+</html>
